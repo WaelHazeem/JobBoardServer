@@ -1,3 +1,4 @@
+const companies=require('./routes/companies');
 const express = require('express')
 const app = express()
 const port = 3000
@@ -51,7 +52,7 @@ app.get('/api/user/:name/jobs', function (req, res, next) {
     else next();
 });
 
-
+app.use('/companies',companies);
 app.use('/api', function (req, res, next) {
     var key = req.query['api-key'];
 

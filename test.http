@@ -4,3 +4,5 @@ GET http://localhost:3000/api/users
 
 
 GET http://localhost:3000/api/user/tobi/repos/?api-key=foo
+
+GET http://localhost:3000/companies?api-key=foo
